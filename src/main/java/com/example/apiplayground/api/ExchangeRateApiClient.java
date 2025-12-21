@@ -72,7 +72,7 @@ public class ExchangeRateApiClient {
         if (parsed == null) throw new RuntimeException("JSON inválido (codes).");
 
         if (parsed.result == null || !parsed.result.equalsIgnoreCase("success")) {
-            throw new RuntimeException(parsed.errorType != null ? parsed.errorType : "Respuesta no exitosa (codes).");
+            throw new RuntimeException(parsed.errorType != null ? parsed.errorType : "Respuesta no exitosa.");
         }
 
         return parsed;
