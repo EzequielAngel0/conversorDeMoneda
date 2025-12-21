@@ -8,7 +8,6 @@ import java.util.List;
 public class SupportedCodesResponse {
     public String result;
 
-    // Formato típico: "supported_codes": [["USD","United States Dollar"], ["MXN","Mexican Peso"], ...]
     @SerializedName("supported_codes")
     public List<List<String>> supportedCodes;
 

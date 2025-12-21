@@ -54,7 +54,6 @@ public class ExchangeRateApiClient {
     }
 
     public SupportedCodesResponse getSupportedCodes() throws IOException, InterruptedException {
-        // Endpoint documentado: /codes :contentReference[oaicite:1]{index=1}
         String url = BASE_URL + "/" + apiKey + "/codes";
 
         HttpRequest request = HttpRequest.newBuilder()
